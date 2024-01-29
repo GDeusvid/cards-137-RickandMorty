@@ -127,7 +127,7 @@ async function verificanome(searchdata,allnames){
             posicoesEncontradas.push(indice);
     }
     });
-    console.log(posicoesEncontradas);
+    
 
     var dadosnapagina=0;
     var pagecount=0;
@@ -170,7 +170,7 @@ async function verificanome(searchdata,allnames){
         pagecount:pagecount
 
     };
-    console.log(newdados);
+    
     return newdados
 }
 
