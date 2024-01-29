@@ -1,0 +1,339 @@
+h1{
+    display: flex;
+    justify-content: center;
+    font-family: rickfont,  Tahoma, sans-serif;
+    font-size: 4rem;
+    margin-top: 0rem;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    color: #40B5CB;
+    text-shadow: 
+        -2px -2px 0 #1C4E55, /* Sombra à esquerda, cor vermelha */
+         2px -2px 0 #1C4E55, /* Sombra à direita, cor vermelha */
+        -2px  2px 0 #1C4E55, /* Sombra acima, cor vermelha */
+         2px  2px 0 #1C4E55, /* Sombra abaixo, cor vermelha */
+        -4px -4px 0 #C0DF40, /* Sombra extra à esquerda, cor amarela */
+         4px -4px 0 #C0DF40, /* Sombra extra à direita, cor amarela */
+        -4px  4px 0 #C0DF40, /* Sombra extra acima, cor amarela */
+         4px  4px 0 #C0DF40; /* Sombra extra abaixo, cor amarela */
+       
+}
+a {
+    text-decoration: none; /* Remove sublinhado */
+    color: inherit; /* Usa a cor padrão do texto */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    /* Adicione outras propriedades conforme necessário para remover mais estilos padrão */
+  }
+  
+  /* Estilo ao passar o mouse sobre o link */
+  a:hover {
+    text-decoration: none; /* Pode ser removido se quiser que haja algum efeito visual ao passar o mouse */
+    /* Adicione outros estilos conforme necessário para o estado de hover */
+  }
+
+h2{
+    display: flex;
+    justify-content: center;
+    font-family: inter, Tahoma, sans-serif;
+    margin-top: 0rem;
+    font-size: 1.5rem;
+    color: #ECF0F1;
+    
+}
+
+body {
+    background-image: url("/images/back.jpg");
+    background-size: cover;
+    /* background-color: #2C3E50; */
+    backdrop-filter: blur(6px);
+    background-attachment: fixed;
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+}
+
+#search {
+    text-align: center;
+    margin: 25px auto;
+    width: 40%;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#nameInput {
+    padding: 10px;
+    width: 200px;
+    font-size: 16px;
+    border: 2px solid #40B5CB;
+    border-radius: 5px;
+    
+}
+
+#get {
+    padding: 5px 10px;
+    font-size: 1.3rem;
+    background-color: #C0DF40;
+    color: #114B27;
+    margin-left: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    border: 3px solid #40B5CB;
+    transition: 0.7s ease;
+}
+
+
+#get:hover {
+    border-color: #C0DF40;
+}
+
+/* Adicionando alguns estilos extras para dar uma vibe Rick and Morty */
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./images/back.jpg') center/cover no-repeat;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    border: 2px solid #40B5CB;
+    padding: 20px;
+    border-radius: 10px;
+    
+    background-color: #40b6cb41;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+#backpage{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' color='rgb(192, 223, 64)' fill='currentColor' class='bi bi-arrow-left-square-fill' viewBox='0 0 16 16'%3E%3Cpath d='M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1'/%3E%3C/svg%3E");
+    background-size: contain; /* Ajuste conforme necessário */
+    background-repeat: no-repeat;
+    background-position: center; /* Ajuste conforme necessário */
+    border: 3px solid #40B5CB;
+    border-radius: 9px;
+      /* background: none; */
+      padding: 0;
+      margin: 0;
+      cursor: pointer;
+      
+      width: 2rem; /* Largura do ícone */
+      height: 2rem;
+    /* Adicione outras propriedades de estilo conforme necessário */
+    background-color: transparent;
+    padding-block: 0px;
+    padding-inline: 0px;
+    margin-right: .5rem;
+    transition: 0.7s ease;
+}
+#backpage:hover{
+    
+    border: 3px solid rgb(192, 223, 64);
+}
+#nextpage{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' color='rgb(192, 223, 64)' fill='currentColor' class='bi bi-arrow-right-square-fill' viewBox='0 0 16 16'%3E%3Cpath d='M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1'/%3E%3C/svg%3E");
+    background-size: contain; /* Ajuste conforme necessário */
+    background-repeat: no-repeat;
+    background-position: center; /* Ajuste conforme necessário */
+    border: 3px solid #40B5CB;
+    border-radius: 9px;
+      /* background: none; */
+      padding: 0;
+      margin: 0;
+      cursor: pointer;
+      
+      width: 2rem; /* Largura do ícone */
+      height: 2rem;
+    /* Adicione outras propriedades de estilo conforme necessário */
+    background-color: transparent;
+    padding-block: 0px;
+    padding-inline: 0px;
+    margin-left: .5rem;
+    transition: 0.7s ease;
+}
+#nextpage:hover{
+    
+    border: 3px solid rgb(192, 223, 64);
+}
+
+.page_selector{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page_count{
+    padding-bottom: .5rem;
+    
+}
+.page_count p{
+    color: #ECF0F1;
+}
+
+/* ...................................................................................CARD AREA */
+#cards_area {
+    margin-left: auto;
+    margin-right: auto;
+     width: 50%;
+     margin-top: .5rem;
+    display: flex;
+    
+    flex-wrap: wrap;
+    /* padding: 20px; */
+    width: 70vw;
+    background-color: rgba(37, 86, 84, 0.5);
+    /* background-image: url("/images/computer.png");
+    backdrop-filter: blur(4px);
+    background-size: contain;
+    background-attachment: fixed; */
+    /* border: 3px solid #40B5CB; */
+    border-radius: 25px;
+    
+    
+}
+
+.card {
+    background-color: rgba(37, 86, 84, 0.01);
+    
+    margin: 10px 2.5%;
+    overflow: hidden;
+    border: none;
+    width: 20%;
+    aspect-ratio: 1 / 1.9;
+    background-image: url("/images/infoback.png");
+    background-position: center;
+    background-size: cover;
+    background-size: 109%;
+    
+    
+}
+.card-info{
+    /* background-image: url("/images/infoback.png");
+    background-position: center;
+    background-size: cover;
+    background-size: 120%; */
+    
+    
+    width: 90%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.card-info-name{
+    height: 4rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-info-name h3{
+    font-size: 1.2rem;
+}
+
+.card_img{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: .5vw;
+    margin-bottom: .5vw;
+            
+            
+}
+
+.card_img img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border: 2px solid #69D47D;
+    border-radius: 10px;
+}
+
+.card-info {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    padding: 8px 10px;
+
+    
+}
+.card-info p{
+    letter-spacing: 1px;
+    color: black;
+    text-shadow: 
+        -1px -1px 0 rgba(192, 223, 64, 0.9), /* Sombra à esquerda, cor vermelha */
+         1px -1px 0 rgba(192, 223, 64, 0.9), /* Sombra à direita, cor vermelha */
+        -1px  1px 0 rgba(192, 223, 64, 0.9), /* Sombra acima, cor vermelha */
+         1px  1px 0 rgba(192, 223, 64, 0.9); /* Sombra abaixo, cor vermelha */
+}
+
+.card-info-name{
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    font-family: descricao,  Tahoma, sans-serif;
+    letter-spacing: 1px;
+    margin-top: 0;
+    color: black;
+    text-shadow: 
+        -1px -1px 0 rgba(233, 233, 233, 0.9), /* Sombra à esquerda, cor vermelha */
+         1px -1px 0 rgba(233, 233, 233, 0.9), /* Sombra à direita, cor vermelha */
+        -1px  1px 0 rgba(233, 233, 233, 0.9), /* Sombra acima, cor vermelha */
+         1px  1px 0 rgba(233, 233, 233, 0.9); /* Sombra abaixo, cor vermelha */
+    
+}
+
+p {
+    margin: 5px 0;
+    font-family: descricao,  Tahoma, sans-serif;
+    color: rgb(32, 32, 32);
+}
+
+.rodape{
+    position: absolute;
+    width: 100%;
+    margin-top: 1rem;
+    
+    
+    
+    border-radius: 10px;
+    bottom: 0;
+    
+    height: 1.5rem;            /* altura do rodapé */
+}
+#page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  #content-wrap {
+    padding-bottom: 2.5rem;    /* altura do rodapé */
+  }
+  
+  .rodapecontent {
+    width: 30%;
+    background-color: rgba(192, 223, 64, 0.9);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  
